@@ -1,0 +1,32 @@
+extends layout
+
+block content
+    if success_msg
+         each msg, i in success_msg
+          .alert.alert-success(style='text-align:center') #{success_msg}
+    if error_msg
+        each msg, i in error_msg
+          .alert.alert-danger(style='text-align:center') #{error_msg}
+    h3(class='bookgform') Booking Request Form
+    form#contact_form(name='contactform', action='/booking', method='POST', style='margin-top: 80px; width: 100%; text-align:center;')
+      .row
+        label(for='name') Your name:
+        br
+        input#name.input(type='text', value='', size='40', placeholder='name', name='name')
+        br
+      .row
+        label(for='email') Your email:
+        br
+        input#email.input(type='text', value='', size='40', placeholder='Your email', name='email')
+        br
+      .row
+        label(for='subject') Subject:
+        br
+        input#name.input(type='text', value='', size='40', placeholder='subject', name='subject')
+        br
+      .row
+        label(for='message') Your message:
+        br
+        textarea#message.input(rows='9', cols='40', value='', placeholder='Please write your message here', name='message')
+        br
+      input#submit_button(type='submit', value='Send email', style='background-color:rgb(51, 204, 0); color:white; font-weight:900;')

@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title= title
+    meta(name='viewport', content='width=device-width,height=device-height,initial-scale=1.0')
+    link(rel='stylesheet', href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
+    link(rel='stylesheet', type='text/css', media='screen and (min-width: 320px) and (max-width: 568px)', href='/stylesheets/portrait.css')
+    link(rel='stylesheet', type='text/css', media='screen and (min-width: 768px) and (max-width: 1024px)', href='/stylesheets/ipad_portrait.css')
+    link(rel='stylesheet', type='text/css', media='screen and (min-width: 568px) and (max-width: 667px)', href='/stylesheets/landscape.css')
+    link(rel='stylesheet', type='text/css', media='screen and (min-width: 800px)', href='stylesheets/style.css')
+  body
+    p(class='contact') Berkeley, CA  Door to Door Taxi Service 510-213-0880
+    nav.navbar.navbar-inverse
+            .container-fluid
+              .navbar-header
+              ul.nav.navbar-nav
+                li
+                 a(href='/home', id='home') Home
+                li
+                  a(href='/Services', id='services') Services 
+                li 
+                  a(href='/fares', id='fares') Cab Fares
+                li 
+                  a(href='/aboutus', id='aboutus') About Us
+                  li 
+                    a(href='/booking', id='booking') Book here
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+    script(type='text/JavaScript', src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    script(type="application/javascript", src="javascripts/global.js")
+
+block content

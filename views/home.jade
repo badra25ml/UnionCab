@@ -1,0 +1,20 @@
+extends layout
+block content
+      br
+      #carousel-home.carousel.slide(data-slide='carousel')
+        ol.carousel-indicators
+          li.active(data-target='#carousel-home', data-slide-to='0')
+          li(data-target='#carousel-home', data-slide-to='1')
+        .carousel-inner
+         .item.active.col-md-7
+              img.img-responsive(src='/images/image0.jpg', alt='interior')
+         .item.col-md-7
+              img.img-responsive(src='/images/image2.jpg', alt='side')        
+        a.carousel-control.left(href='#carousel-home', data-slide='prev')
+         span(icon-prev='')
+         span.icon-prev
+        a.carousel-control.right(href='#carousel-home', data-slide='next')
+         span.icon-next
+        
+
+     

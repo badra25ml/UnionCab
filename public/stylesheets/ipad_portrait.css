@@ -1,0 +1,65 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color:rgb(204, 204, 204);
+}
+
+a {
+  color: #00B7FF;
+}
+a#home, a#services, a#fares, a#aboutus, a#booking {
+  color: white;
+}
+h1.aboutus {
+  text-align:center;
+}
+div.aboutustxt {
+  text-align:center;
+  margin: 0 auto;
+  width:50%;
+}
+h3.bookgform {
+  text-align: center;
+  margin-bottom: -50px;
+}
+p.contact {
+  text-align: center;
+  font-size:1.75em;
+  color:rgb(4, 134, 174);
+  margin: 0 auto;
+  margin-top: -35px;
+}
+.services {
+  text-align:center;
+}
+.servicesoffer {
+  font-size: 1.5em;
+  font-weight: 900;
+}
+.fares {
+  font-size: 1.5em;
+  font-weight: 900;
+}
+table {
+  margin: 0 auto; text-align:left; font-weight:bold; width: 100%; border-style: solid;
+}
+img.img-responsive {
+  margin: 0 auto;
+}
+
+/*p.number {
+  text-align: right;
+  margin-top: -70px;
+  font-size:2em;
+  animation-name: flash;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@keyframes flash {
+    from {color: red;}
+    to {color: rgb(0, 0, 255);}
+}*/
